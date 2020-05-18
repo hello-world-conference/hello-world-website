@@ -1,0 +1,40 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Sources du site Internet des évènements Hello World",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run watch",
+    "watch": "npm-run-all --parallel watch:css watch:html",
+    "watch:html": "cross-env NODE_ENV=dev eleventy --serve --input=./src --output=./dist",
+    "watch:css": "postcss ./src/styles/tailwind.css -o ./dist/index.css --watch",
+    "build": "npm-run-all clean build:html build:css",
+    "build:html": "cross-env NODE_ENV=production eleventy --input=./src --output=./dist",
+    "build:css": "postcss ./src/styles/tailwind.css -o ./dist/index.css",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hello-world-conference/website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hello-world-conference/website/issues"
+  },
+  "homepage": "https://github.com/hello-world-conference/website#readme",
+  "dependencies": {
+    "@11ty/eleventy": "0.10.0",
+    "@11ty/eleventy-plugin-rss": "1.0.7",
+    "html-minifier-terser": "5.1.1",
+    "luxon": "1.24.1",
+    "tailwindcss": "1.4.0"
+  },
+  "devDependencies": {
+    "cross-env": "7.0.2",
+    "npm-run-all": "4.1.5",
+    "postcss-cli": "7.1.0"
+  }
+}

@@ -1,0 +1,5 @@
+# sitemap.xml location
+sitemap: https://www.hello-world.events/sitemap.xml
+# No follow 
+User-agent: *
+Disallow: /
