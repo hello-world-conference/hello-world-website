@@ -1,0 +1,8 @@
+---
+layout: layouts/app.layout.njk
+---
+<main role="main" class="container mx-auto">
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+  <p class="mt-12"><a href="{{ '/' | url }}">← Accueil</a></p>
+</main>

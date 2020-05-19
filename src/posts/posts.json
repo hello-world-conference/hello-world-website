@@ -1,0 +1,4 @@
+{
+  "tags": ["posts"],
+  "permalink": "./{{ title | slug }}.html"
+}

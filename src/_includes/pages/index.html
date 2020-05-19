@@ -1,4 +1,14 @@
 <main role="main" class="container mx-auto">
+  <ul>
+    {% for post in collections.posts %}
+    <li class="">
+      <time class="" datetime="{{ post.date | htmlDateString }}"
+        >{{ post.date | readableDate }}</time
+      >
+      <a href="{{ post.url | url }}" class="">{{ post.data.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
   <p class="text-xl mt-8 mb-2">
     Prochaine session le
     <b>jeudi 7 mai d'où l'on veut puisque ça sera du remote</b> !
