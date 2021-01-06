@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/hello-world-conference/website#readme",
   "dependencies": {
-    "@11ty/eleventy": "0.10.0",
+    "@11ty/eleventy": "0.11.1",
     "@11ty/eleventy-plugin-rss": "1.0.7",
     "html-minifier-terser": "5.1.1",
     "luxon": "1.24.1",
