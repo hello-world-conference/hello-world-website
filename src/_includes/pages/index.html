@@ -1,14 +1,4 @@
 <main role="main" class="container mx-auto">
-  <!-- <ul>
-    {% for post in collections.posts %}
-    <li class="">
-      <time class="" datetime="{{ post.date | htmlDateString }}"
-        >{{ post.date | readableDate }}</time
-      >
-      <a href="{{ post.url | url }}" class="">{{ post.data.title }}</a>
-    </li>
-    {% endfor %}
-  </ul> -->
   <p class="text-xl mt-8 mb-2">
     Prochaine session le
     <b>vendredi 16 avril 2021 d'où l'on veut</b> puisque ça sera réalisé à distance.
@@ -92,6 +82,17 @@
           >Le détail des propositions</a
         >
       </li>
+    </ul>
+  </section>
+  <section>
+    <h2>Nos échecs, enfin nos apprentissages quoi...</h2>
+    <ul>
+      {% for post in collections.posts %}
+      <li>
+        <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        <a href="{{ post.url | url }}" class="">{{ post.data.title }}</a>
+      </li>
+      {% endfor %}
     </ul>
   </section>
 </main>
