@@ -17,6 +17,20 @@ p {
 ul > li {
   @apply p-4;
 }
+button {
+  @apply font-bold;
+}
+input {
+  @apply text-xl;
+  @apply mt-1;
+  @apply px-2;
+  @apply rounded-md;
+  @apply w-full;
+  @apply block;
+}
+label {
+  @apply font-bold;
+}
 
 @tailwind components;
 @tailwind utilities;
