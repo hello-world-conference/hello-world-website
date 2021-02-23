@@ -40,7 +40,7 @@ Ensuite "yapluka" accueillir les participants :
 
 Ok, mais du coup ça se passe où si c'est virtuel ?! 🤔
 
-Pour que le déroulement de l'événement à distance se passe au mieux et que nous ayons toujours la possibilité d'appliquer facilement "la loi des 2 pieds" (connue dans les conférences de type ["unconference" ou "open space"](https://en.wikipedia.org/wiki/Unconference), nous avons opté pour l'outil [Discord](https://discordapp.com/).
+Pour que le déroulement de l'événement à distance se passe au mieux et que nous ayons toujours la possibilité d'appliquer facilement "la loi des 2 pieds" (connue dans les conférences de type ["unconference" ou "open space"](https://en.wikipedia.org/wiki/Unconference)), nous avons opté pour l'outil [Discord](https://discordapp.com/).
 
 Celui-ci est assez pratique pour changer de salons textuels et/ou vocaux, mais également partager son écran si on le désire.
 Il n'est pas nécessaire de créer un compte, tout comme il n'est pas nécessaire d'installer l'application native dédiée à son OS, mais honnêtement on le conseille quand même fortement aux particpants.
