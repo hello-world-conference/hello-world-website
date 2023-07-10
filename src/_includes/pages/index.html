@@ -1,7 +1,36 @@
 <main role="main" class="container mx-auto">
-  <p class="text-xl mt-8 mb-2">
-    On réfléchit à la date et au format du prochain événement ;)
+  <p>
+    Une conférence réunissant des professionnel⋅le⋅s de l'IT pour échanger sur
+    leurs pratiques et savoirs respectifs sous forme d'ateliers,
+    expérimentations, débats ferait sens pour toi ?
   </p>
+  <p class="text-xl mt-8 mb-8">
+    Après une période un peu compliquée avec le COVID nous sommes ravis de
+    t'annoncer que la
+    <b
+      >6ème édition de Hello World se tiendra en présentiel, le vendredi 29
+      septembre 2023.</b
+    >
+  </p>
+  <p class="text-center text-xl mt-8 mb-8 pt-8 pb-8">
+    <a
+      href="https://www.eventbrite.fr/e/billets-hello-world-6-672940893327"
+      target="_blank"
+      class="bg-gray-800 p-2 text-white rounded-md mt-4"
+      ><b>Je veux m'inscrire !</b></a
+    >
+  </p>
+  <p class="mt-8 mb-2">
+    Cette édition se déroulera dans les locaux de Zenika situés au 2ter Quai
+    François Mitterrand, 44200 Nantes ; nous les remercions chaleureusement pour
+    leur accueil. L'inscription est gratuite, mais obligatoire pour des raisons
+    d'organisation. Nous te demandons également de bien vouloir t'inscrire
+    uniquement si tu es sûr de pouvoir venir, afin de ne pas bloquer la place
+    d'une personne qui souhaiterait participer.
+  </p>
+  <!-- <p class="text-xl mt-8 mb-2">
+    On réfléchit à la date et au format du prochain événement ;)
+  </p> -->
   <!-- <p>On accueille les participants à 8h30 et on démarre la journée à 9h, pour voir 👉 <a href="https://www.hello-world.events/organiser-une-conference-a-distance.html">le programme type d'une journée.</a></p>
   <p class="text-xl mt-8 mb-2">Pour s'inscrire, c'est simple.</p>
   <form action="https://infallible-johnson-18691d.netlify.app/.netlify/functions/subscription" method="POST" class="bg-gray-200 p-4 mt-4 rounded-md">
@@ -49,20 +78,24 @@
     <h2>Oui mais c'est quoi le programme ?</h2>
     Ça on ne sait pas 🤷‍♂️, ça dépend de toi et des autres participants, mais tu
     peux toujours aller voir
-    <a href="https://github.com/hello-world-conference/conference/issues?q=is%3Aissue+is%3Aclosed" target="blank">ce qui a
-      déjà été proposé dans toutes les précédentes éditions</a>
-    , ça peut te donner une idée de ce que tu y trouveras et de ce que tu peux y proposer.
+    <a
+      href="https://github.com/hello-world-conference/conference/issues?q=is%3Aissue+is%3Aclosed"
+      target="blank"
+      >ce qui a déjà été proposé dans toutes les précédentes éditions</a
+    >
+    , ça peut te donner une idée de ce que tu y trouveras et de ce que tu peux y
+    proposer.
   </section>
   <section class="mb-4">
     <h2>Les précédentes éditions</h2>
     <ul class="divide-y divide-gray-300">
-      <li>
-        <b>16/04/2021</b> : Session réalisée à distance<br />
-      </li>
+      <li><b>16/04/2021</b> : Session réalisée à distance<br /></li>
       <li>
         <b>02/10/2020</b> : Session réalisée à distance<br /><a
-          href="https://github.com/hello-world-conference/conference/milestone/4?closed=1" target="blank">Le détail des
-          propositions</a>
+          href="https://github.com/hello-world-conference/conference/milestone/4?closed=1"
+          target="blank"
+          >Le détail des propositions</a
+        >
       </li>
       <li>
         <b>07/05/2020</b> : Session réalisée à distance<br /><a
@@ -92,7 +125,9 @@
     <ul>
       {% for post in collections.posts %}
       <li>
-        <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        <time datetime="{{ post.date | htmlDateString }}"
+          >{{ post.date | readableDate }}</time
+        >
         <a href="{{ post.url | url }}" class="">{{ post.data.title }}</a>
       </li>
       {% endfor %}
