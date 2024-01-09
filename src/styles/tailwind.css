@@ -36,5 +36,13 @@ label {
   @apply font-bold;
 }
 
+.eye-catching {
+  @apply text-2xl;
+  @apply font-bold;
+  @apply text-center;
+  @apply bg-gray-100;
+  @apply my-12;
+}
+
 @tailwind components;
 @tailwind utilities;
