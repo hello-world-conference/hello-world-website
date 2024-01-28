@@ -1,0 +1,16 @@
+---
+layout: layouts/app.layout.njk
+---
+
+<h1>Nos apprentissages</h1>
+<ul>
+  {% for post in collections.posts %}
+    <li>
+      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <a href="{{ post.url | url }}" class="">{{ post.data.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+<p class="mt-12">
+  <a href="{{ '/' | url }}">← Accueil</a>
+</p>

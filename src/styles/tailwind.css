@@ -36,6 +36,16 @@ label {
   @apply font-bold;
 }
 
+navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+navigation ul > li {
+  list-style-type: none;
+}
+
 .eye-catching {
   @apply text-2xl;
   @apply font-bold;

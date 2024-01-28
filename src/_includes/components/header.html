@@ -1,3 +1,11 @@
 <header class="container mx-auto">
   <h1>{{ metadata.title }}</h1>
+  <navigation>
+    <ul>
+      <li><a href="{{ '/' | url }}">Accueil</a></li>
+      <li><a href="{{ '/previous-events' | url }}">Précédentes éditions</a></li>
+      <li><a href="{{ '/learnings' | url }}">Nos apprentissages</a></li>
+      <li><a href="{{ '/code-of-conduct' | url }}">Code de conduite</a></li>
+    </ul>
+  </navigation>
 </header>
